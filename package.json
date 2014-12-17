@@ -1,0 +1,21 @@
+{
+  "name": "ams-lens",
+  "description": "eLife Lens bundle.",
+  "dependencies": {
+    "underscore": "1.5.x",
+    "express": "3.3.x",
+    "ejs": "*",
+    "substance-application": "git+https://github.com/substance/application.git#lens",
+    "substance-data": "git+https://github.com/substance/data.git#lens",
+    "substance-document": "git+https://github.com/substance/document.git#lens",
+    "lens-article": "git+https://github.com/elifesciences/lens-article.git#ams",
+    "substance-toc": "git+https://github.com/substance/toc.git#lens",
+    "lens-converter": "git+https://github.com/elifesciences/lens-converter.git#master",
+    "substance-util": "git+https://github.com/substance/util.git#lens",
+    "lens": "git+https://github.com/elifesciences/lens.git#master"
+  },
+  "devDependencies": {
+    "substance-cjs": "git+https://github.com/substance/cjs.git#master"
+  },
+  "version": "1.0.0"
+}

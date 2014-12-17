@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="lib/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript"></script>
+  </head>
+  <body>
+    <% sampleset.forEach( function(journal) { %>
+      <h1><%= journal.name %></h1>
+      <% journal.samples.forEach(function (sample) { %>
+        <a href="doc.html?url=<%= sample.url %>" target="_blank">
+          <%= sample.url %>
+        </a>
+        &nbsp;
+        <a href="<%= sample.url %>" target="_blank">XML</a>
+        <% if (sample.comment) { %>
+          (<%= sample.comment %>)
+        <% } %>
+        <br/>
+      <% }); %>
+    <% }); %>
+  </body>
+</html>
