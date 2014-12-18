@@ -1,0 +1,20 @@
+.altmetrics-panel {
+	padding: 70px;
+	padding-top: 20px;
+}
+
+.altmetrics-panel .altmetrics .label {
+	padding-top: 20px;
+	font-size: 15px;
+	color: #999;
+}
+
+.altmetrics-panel .altmetrics .value {
+	font-size: 26px;
+}
+
+.altmetrics-panel .altmetrics .copyright {
+	padding-top: 50px;
+	color: #666;
+	font-style: italic;
+}

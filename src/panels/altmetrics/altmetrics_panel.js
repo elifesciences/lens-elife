@@ -5,10 +5,11 @@ var altmetricsService = require('./altmetrics_service').instance();
 var AltmetricsController = require('./altmetrics_controller');
 
 var panel = new Panel({
+	name: "altmetrics",
   type: 'resource',
   label: 'Altmetrics',
   title: 'Altmetrics',
-  icon: 'icon-external-link',
+  icon: 'icon-bar-chart',
 });
 
 panel.createController = function(doc) {

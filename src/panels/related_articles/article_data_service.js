@@ -13,10 +13,8 @@ ArticleDataService.Prototype = function() {
 
   this.getKeyReferences = function(articleDOI, refDOI, cb) {
     if (!this.keyReferences[articleDOI]) return cb(null, {});
-    var keyRefs = this.keyReferences[articleDOI][refDOI];
-    window.setTimeout(function() {
-      cb(null, keyRefs);
-    }, 3000);
+    var keyRefs = this.keyReferences[articleDOI][refDOI];    
+    cb(null, keyRefs);
   };
 
   // Get all article relationships for a particular DOI
@@ -25,10 +23,7 @@ ArticleDataService.Prototype = function() {
 
   this.getRelatedArticles = function(doi, cb) {
     var rels = this.relationships[doi];
-
-    window.setTimeout(function() {
-      cb(null, rels);
-    }, 3000);
+    cb(null, rels);
   };
 };
 

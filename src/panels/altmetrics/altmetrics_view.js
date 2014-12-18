@@ -4,7 +4,7 @@ var AltmetricsView = function(panelCtrl, config, articleDataService) {
   PanelView.call(this, panelCtrl, config);
 
   // TODO: this should not have class 'surface'
-  this.$el.addClass('surface related_articles');
+  this.$el.addClass('altmetrics-panel');
 
   // Hide toggle on contruction, it will be displayed once data has arrived
   // this.hideToggle();
@@ -14,33 +14,41 @@ var AltmetricsView = function(panelCtrl, config, articleDataService) {
 AltmetricsView.Prototype = function() {
 
   this.render = function() {
+    var self = this;
+    this.el.innerHTML = '';
 
-    console.log('rendering...');
-    // this.$content.empty();
     // var doi = this.getDocument().get('publication_info').doi;
 
-    // var self = this;
-    // this.articleDataService.getRelatedArticles(doi, function(err, rels) {
-    //   if (err) {
-    //     console.error("Could not retrieve related articles:", err);
-    //     return;
-    //   }
-    //   if (rels && rels.length > 0) self.renderRelatedArticles(rels);
-    // });
-    this.controller.getAltmetrics();
 
-    this.el.innerHTML = 'Altmetrics go here';
+    this.controller.getAltmetrics(function(err, altmetrics) {
+      console.log('jo done with altmetrics', altmetrics);
+      if (!err) {
+        self.renderAltmetrics(altmetrics);  
+      } else {
+        console.error("Could not retrieve related articles:", err);
+      }
+    });
+
+    
     return this;
   };
 
-  this.renderAltmetrics = function(rels) {
+  this.renderAltmetrics = function(altmetrics) {
     this.showToggle();
 
-    // for (var i = 0; i < rels.length; i++) {
-    //   var rel = rels[i];
-    //   var view = new ArticleRelationshipView(rel);
-    //   this.$content[0].appendChild(view.render().el);
-    // }
+    var $altmetrics = $('<div class="altmetrics"></div>');
+    $altmetrics.append($('<div class="label">Altmetric.com Score</div>'));
+    $altmetrics.append($('<div class="value"></div>').text(altmetrics.score));
+
+    $altmetrics.append($('<div class="label">Cited on Twitter</div>'));
+    $altmetrics.append($('<div class="value"></div>').text(altmetrics.cited_by_tweeters_count));
+
+    $altmetrics.append($('<div class="label">Readers on Mendeley</div>'));
+    $altmetrics.append($('<div class="value"></div>').text(altmetrics.readers.mendeley));
+
+    $altmetrics.append($('<div class="copyright">Data provided by <a href="http://altmetric.com">altmetrics.com</div>'));
+
+    this.$el.append($altmetrics);
   };
 };
 

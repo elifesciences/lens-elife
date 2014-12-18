@@ -44,11 +44,6 @@
       "repository": "https://github.com/elifesciences/lens.git",
       "folder": "node_modules/lens",
       "branch": "master"
-    },
-    {
-      "repository": "https://github.com/elifesciences/lens-elife.git",
-      "folder": ".",
-      "branch": "master"
     }
   ],
   "node_modules": {
@@ -83,6 +78,7 @@
     "styles/surface.css": "node_modules/lens/styles/surface.css",
     "styles/reader.css": "node_modules/lens/styles/reader.css",
     "styles/article_relationship.css": "src/panels/related_articles/article_relationship.css",
+    "styles/altmetrics.css": "src/panels/altmetrics/altmetrics.css",
     "styles/lens.css":  "node_modules/lens/styles/lens.css"
   },
   "assets": {
