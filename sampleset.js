@@ -1,5 +1,14 @@
 module.exports = [
   {
+    "name": "Issues",
+    "samples": [
+      {
+        "url": "http://localhost:4001/data/issues/002.xml",
+        "comment": "Support Small Caps"
+      }
+    ]
+  },
+  {
     "name": "eLife Samples",
     "samples": [
       {

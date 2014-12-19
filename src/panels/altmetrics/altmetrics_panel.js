@@ -1,7 +1,6 @@
 "use strict";
 
 var Panel = require('lens').Panel;
-var altmetricsService = require('./altmetrics_service').instance();
 var AltmetricsController = require('./altmetrics_controller');
 
 var panel = new Panel({
@@ -13,7 +12,7 @@ var panel = new Panel({
 });
 
 panel.createController = function(doc) {
-  return new AltmetricsController(doc, this.config, altmetricsService);
+  return new AltmetricsController(doc, this.config);
 };
 
 module.exports = panel;

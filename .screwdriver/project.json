@@ -18,7 +18,7 @@
     {
       "repository": "https://github.com/elifesciences/lens-article.git",
       "folder": "node_modules/lens-article",
-      "branch": "ams"
+      "branch": "master"
     },
     {
       "repository": "https://github.com/substance/toc.git",

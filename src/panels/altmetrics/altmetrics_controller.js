@@ -1,20 +1,20 @@
 var PanelController = require("lens").PanelController;
 var AltmetricsView = require("./altmetrics_view");
 
-var AltmetricsController = function(document, config, altmetricsService) {
-  this.document = document;
-  this.config = config;
-  this.altmetricsService = altmetricsService;
+var AltmetricsController = function(document, config) {
+  PanelController.call(this, document, config);
 };
 
 AltmetricsController.Prototype = function() {
   this.createView = function() {
-    return new AltmetricsView(this, this.config, this.altmetricsService);
+    return new AltmetricsView(this, this.config);
   };
 
   this.getAltmetrics = function(cb) {
+    var doi = this.document.get('publication_info').doi;
+
 		$.ajax({
-		  url: "http://api.altmetric.com/v1/doi/10.7554/eLife.00005",
+		  url: "http://api.altmetric.com/v1/doi/"+doi,
 		  dataType: "json",
 		}).done(function(res) {
 			cb(null, res);

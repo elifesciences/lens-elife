@@ -4,8 +4,7 @@ var PanelController = require("lens").PanelController;
 var RelatedArticlesView = require('./related_articles_view');
 
 var RelatedArticlesController = function(document, config, articleDataService) {
-  this.document = document;
-  this.config = config;
+  PanelController.call(this, document, config);
   this.articleDataService = articleDataService;
 };
 

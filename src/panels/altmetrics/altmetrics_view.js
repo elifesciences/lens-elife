@@ -1,14 +1,12 @@
 var PanelView = require('lens').PanelView;
 
-var AltmetricsView = function(panelCtrl, config, articleDataService) {
+var AltmetricsView = function(panelCtrl, config) {
   PanelView.call(this, panelCtrl, config);
 
-  // TODO: this should not have class 'surface'
   this.$el.addClass('altmetrics-panel');
 
   // Hide toggle on contruction, it will be displayed once data has arrived
-  // this.hideToggle();
-  // this.$el.append(this.$content);
+  this.hideToggle();
 };
 
 AltmetricsView.Prototype = function() {
@@ -17,8 +15,9 @@ AltmetricsView.Prototype = function() {
     var self = this;
     this.el.innerHTML = '';
 
-    // var doi = this.getDocument().get('publication_info').doi;
+    // var doi = this.controller.get('publication_info').doi;
 
+    
 
     this.controller.getAltmetrics(function(err, altmetrics) {
       console.log('jo done with altmetrics', altmetrics);
