@@ -19,19 +19,12 @@
 
     <!-- MathJax Configuration -->
     <script type="text/x-mathjax-config">
-       MathJax.Hub.Config({
-         jax: ["input/TeX", "input/MathML","output/HTML-CSS"],
-         extensions: ["MathMenu.js","MathZoom.js", "CHTML-preview.js"],
-         "HTML-CSS": { linebreaks: { automatic: true }, EqnChunk: 9999 },
-         SVG: { linebreaks: { automatic: true }, EqnChunk: 9999  },
-         TeX: {
-           extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
-         },
-         "displayAlign": "left",
-         styles: {".MathJax_Display": {padding: "0em 0em 0em 3em" },".MathJax_SVG_Display": {padding: "0em 0em 0em 3em" },}
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "input/MathML","output/HTML-CSS"],
+        SVG: { linebreaks: { automatic: true }, EqnChunk: 9999  },
+        "displayAlign": "left",
+        styles: {".MathJax_Display": {padding: "0em 0em 0em 3em" },".MathJax_SVG_Display": {padding: "0em 0em 0em 3em" }}
       });
-
-       
     </script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
