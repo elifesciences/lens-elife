@@ -17,6 +17,10 @@ module.exports = [
       {
         "url": "https://s3.amazonaws.com/elife-cdn/elife-articles/03785/elife03785.xml",
         "comment": ""
+      },
+      {
+        "url": "/example-with-quotes.xml",
+        "comment": ""
       }
     ]
   }
