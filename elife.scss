@@ -1,0 +1,153 @@
+/* eLife-related style overrides */
+
+$interface-font: "Avenir Next", sans-serif;
+$prose-font: "PT Serif", "Georgia", serif;
+$default-text-color: #333;
+
+body {
+  font-family: $interface-font;
+  font-weight: 500;
+  color: $default-text-color;
+}
+
+/* Links */
+
+a {
+  color: #0288D1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0277BD;
+}
+
+/* Line height overrides */
+
+.article .resources {
+  line-height: 23.0px;
+}
+
+/* Bread crumbs */
+
+.lens-article .content-node.cover .breadcrumbs a {
+  font-weight: 600;
+}
+
+/* Article title */
+
+.lens-article .content-node.cover .title {
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.lens-article .content-node.cover .published-on {
+  color: #999;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Authors on cover page */
+
+.lens-article .content-node.cover .doi {
+  font-weight: 600;
+
+  a {
+    // color: #333;
+    font-weight: 600;
+  }
+}
+
+.lens-article .content-node.cover .authors .text a {
+  font-weight: 600;
+  font-size: 16px;
+  color: $default-text-color;
+}
+
+.lens-article .content-node.cover .authors .contributor_reference.highlighted {
+  background: #333;
+  color: #fff;
+}
+
+/* Links on cover page (PDF, Source XML, Lens JSON) */
+
+.lens-article .content-node.cover .content .links a {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Paragraph (only in main content) */
+
+.surface.content .content-node.paragraph {
+  font-family: $prose-font;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Headings */
+
+.content-node.heading.level-1 .content {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.content-node.heading.level-2 .content {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.content-node.heading.level-3 .content {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Headings in TOC */
+
+.resource-view.toc .heading-ref {
+  font-size: 18px;
+}
+
+.resource-view.toc .heading-ref.level-2 {
+  font-size: 16px;
+}
+
+.resource-view.toc .heading-ref.level-3 {
+  font-size: 14px;
+}
+
+/* Reference card */
+
+.lens-article .resources .content-node.citation .resource-header .name {
+  font-weight: 600;
+}
+
+/* Labels in resource panel */
+
+.lens-article .content-node.publication-info .label {
+  font-weight: 600;
+}
+
+.lens-article .resources .nodes > .content-node.publication-info .content-node[data-id=articleinfo] .heading.level-3 .content {
+  font-weight: 600;
+}
+
+.lens-article .resources .nodes > .content-node.publication-info a {
+  font-weight: 600;
+}
+
+.lens-article .resources .content-node.contributor .resource-header .name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.lens-article .content-node.contributor .label {
+  font-weight: 600;
+}
+
+.lens-article .content-node.contributor a {
+  font-weight: 600;
+}
+
+.node.highlighted {
+  background: #666;
+}
