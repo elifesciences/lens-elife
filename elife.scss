@@ -54,6 +54,10 @@ a:hover {
   @extend .contextual-label;
 }
 
+.lens-article .content-node.cover .subjects {
+  @extend .contextual-label;
+}
+
 /* Authors on cover page */
 .lens-article .content-node.cover .doi {
   @extend .contextual-label;
@@ -192,33 +196,9 @@ a:hover {
   font-weight: 600;
 }
 
-/* Labels in resource panel */
-.lens-article .content-node.publication-info .label {
-  @extend .contextual-label;
-}
-
-.lens-article .resources .nodes > .content-node.publication-info .content-node[data-id=articleinfo] .heading.level-3 .content {
-  @extend .contextual-label;
-}
-
-.lens-article .resources .nodes > .content-node.publication-info a {
-  @extend .contextual-label;
-  text-transform: none;
-  font-weight: 600;
-}
-
 .lens-article .resources .content-node.contributor .resource-header .name {
   font-weight: 600;
   font-size: 14px;
-}
-
-.lens-article .content-node.contributor .label {
-  @extend .contextual-label;
-}
-
-.lens-article .content-node.contributor a {
-  @extend .contextual-label;
-  text-transform: none;
 }
 
 /* Scrollbar default highlight color */
@@ -270,4 +250,41 @@ a:hover {
 /* HACK: Make sure always the interface font is in toggle buttons (focus, fullscreen) */
 .article .resources .content-node .resource-header .toggles {
   font-family: $interface-font;
+}
+
+/* Resource view */
+
+.panel.info {
+  font-family: $prose-font;
+}
+
+.lens-article .content-node.publication-info .label {
+  font-family: $interface-font;
+}
+
+.article .resources .nodes > .content-node.publication-info .content-node[data-id=articleinfo] .heading .content {
+  font-weight: 600;
+}
+
+.lens-article .content-node.contributor .label {
+  font-family: $interface-font;
+  color: $default-text-color;
+  font-weight: 600;
+}
+
+
+.article .resources .nodes > .content-node.publication-info .content-node[data-id=articleinfo] .heading.level-3 .content {
+  font-family: $interface-font;
+  font-weight: 600;
+}
+
+.lens-article .resources .content-node.contributor .resource-header .name {
+  @extend .contextual-label;
+  font-size: 11px;
+}
+
+.lens-article .content-node.publication-info .label {
+  color: $default-text-color;
+  font-weight: 600;
+  fonts-size: 14px;
 }
