@@ -34,7 +34,7 @@ a:hover {
 
 /* Line height overrides */
 .article .resources {
-  line-height: 23px;
+  line-height: 24px;
 }
 
 /* Bread crumbs */
@@ -232,7 +232,7 @@ a:hover {
 }
 
 /* Change font-size for all resource nodes */
-.lens-article .resources .nodes > .content-node {
+.lens-article .resources .figures .nodes > .content-node {
   font-size: 13px;
 }
 
@@ -286,5 +286,14 @@ a:hover {
 .lens-article .content-node.publication-info .label {
   color: $default-text-color;
   font-weight: 600;
-  fonts-size: 14px;
+  font-size: 14px;
+}
+
+.lens-article .content-node.contributor .contributor-name {
+  font-family: $interface-font;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
