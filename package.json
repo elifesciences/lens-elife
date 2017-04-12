@@ -5,10 +5,10 @@
     "underscore": "1.8.x",
     "express": "3.3.x",
     "ejs": "*",
-    "lens": "elifesciences/lens.git#b2495985e67c0bc4559bdf281268ef7c09f78be4"
+    "lens": "elifesciences/lens.git#develop"
   },
   "devDependencies": {
-    "browserify": "*",
+    "browserify": "substance/node-browserify#d3caeb6dcdaa97a258d099c7231a57f0f60ec876",
     "node-sass": "3.x",
     "gulp": "^3.8.11",
     "gulp-sass": "^2.0.3",
