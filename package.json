@@ -3,7 +3,7 @@
   "description": "eLife Lens bundle.",
   "dependencies": {
     "underscore": "1.8.x",
-    "express": "3.3.x",
+    "express": "3.21.x",
     "ejs": "*",
     "lens": "elifesciences/lens.git#develop"
   },
