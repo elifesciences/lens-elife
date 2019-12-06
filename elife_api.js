@@ -3,7 +3,7 @@ var video_data = {};
 function traverse(jsonData) {
     if( jsonData !== null && typeof jsonData == "object" ) {
         if (jsonData["type"] == "video") {
-            console.log(jsonData);
+            //console.log(jsonData);
             video_data[jsonData["id"]] = {};
             video_data[jsonData["id"]]["jpg_href"] = jsonData["image"];
             var sources = jsonData["sources"];
