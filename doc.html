@@ -23,7 +23,7 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     <script src='lens.js'></script>
-
+    <script src="elife_api.js"></script>
     <script>
 
       // Little helper used to parse query strings from urls
@@ -48,6 +48,7 @@
             query_string[pair[0]].push(pair[1]);
           }
         }
+        elifeApiCall();
         return query_string;
       } ();
 

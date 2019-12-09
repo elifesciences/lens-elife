@@ -19,6 +19,12 @@ gulp.task('assets', function() {
 
 });
 
+gulp.task('elife_api', function() {
+    gulp.src('./elife_api.js')
+      .pipe(gulp.dest('./dist'));
+  
+  });
+
 gulp.task('sass', function () {
   gulp.src('./lens.scss')
     .pipe(sass().on('error', sass.logError))
@@ -45,4 +51,4 @@ gulp.task('browserify', function () {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['assets', 'sass', 'browserify']);
+gulp.task('default', ['assets', 'elife_api', 'sass', 'browserify']);
