@@ -3,3 +3,5 @@
 *.sublime-*
 dist/*
 npm-debug.log
+.nvmrc
+.python-version
