@@ -13,7 +13,7 @@
     "express": "^4.17.1",
     "lens": "elifesciences/lens.git#develop",
     "method-override": "^3.0.0",
-    "underscore": "1.8.x"
+    "underscore": "^1.12.0"
   },
   "devDependencies": {
     "browserify": "substance/node-browserify#d3caeb6dcdaa97a258d099c7231a57f0f60ec876",
