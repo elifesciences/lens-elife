@@ -15,7 +15,7 @@
   "devDependencies": {
     "browserify": "substance/node-browserify#d3caeb6dcdaa97a258d099c7231a57f0f60ec876",
     "gulp": "^4.0.2",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^2.0.3",
     "gulp-uglify": "^1.2.0",
     "node-sass": "4.x",
