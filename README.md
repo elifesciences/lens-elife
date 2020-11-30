@@ -19,7 +19,7 @@ nvm install
 nvm use
 echo "2.7.17" > .python-version
 pyenv install
-pvenv local
+pyenv local
 npm install
 npm start
 ```
