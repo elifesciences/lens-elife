@@ -13,14 +13,14 @@
     "express": "^4.17.1",
     "lens": "elifesciences/lens.git#develop",
     "method-override": "^3.0.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^6.0.0",
     "underscore": "^1.12.1"
   },
   "devDependencies": {
     "browserify": "substance/node-browserify#d3caeb6dcdaa97a258d099c7231a57f0f60ec876",
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "through2": "^4.0.2"
   }
