@@ -1,7 +1,7 @@
 'use strict';
  
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 const browserify = require('browserify');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
