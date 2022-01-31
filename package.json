@@ -13,7 +13,7 @@
     "express": "^4.17.1",
     "lens": "elifesciences/lens.git#develop",
     "method-override": "^3.0.0",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.1",
     "underscore": "^1.12.1"
   },
   "devDependencies": {
